@@ -90,7 +90,7 @@ if '"authenticated":true' in log.text:
 		data2 = {
 	'first_name': 'RB',
 	'email': 'aa846513188@gmail.com',
-	'username': 'natksujetz',
+	'username': 'nzosiebw',
 	'phone_number': '',
 	'biography': bio,
 	'external_url': '',
