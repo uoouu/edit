@@ -7,7 +7,7 @@ timee = int(datetime.now().timestamp())
 
 url = 'https://www.instagram.com/accounts/login/ajax/'
 
-user = 'natksujetz'
+user = 'nzosiebw'
 pas = '12345@00'
 re = requests.Session()
 
@@ -89,7 +89,7 @@ if '"authenticated":true' in log.text:
 عيناك عليَّ ولا تراني - {tor} {po} -'''
 		data2 = {
 	'first_name': 'RB',
-	'email': 'aa84651188@gmail.com',
+	'email': 'aa846513188@gmail.com',
 	'username': 'natksujetz',
 	'phone_number': '',
 	'biography': bio,
