@@ -88,7 +88,7 @@ if '"authenticated":true' in log.text:
 		bio = f'''‍ ‍ ‍ ‍
 عيناك عليَّ ولا تراني - {tor} {po} -'''
 		data2 = {
-	'first_name': 'RB',
+	'first_name': '',
 	'email': 'aa846513188@gmail.com',
 	'username': 'nzosiebw',
 	'phone_number': '',
