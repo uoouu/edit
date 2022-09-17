@@ -6,7 +6,7 @@ timee = int(datetime.now().timestamp())
 
 url = 'https://www.instagram.com/accounts/login/ajax/'
 
-user = 'nzosiebw'
+user = 'xtrrryuvr'
 pas = '12345@00'
 re = requests.Session()
 
@@ -80,7 +80,36 @@ if '"authenticated":true' in log.text:
 	while True:
 		IST = pytz.timezone('Asia/Baghdad')
 		ct = datetime.now(IST)
-		tor = (ct.strftime('%H:%M'))
+		tor1 = int(ct.strftime('%H'))
+		if tor1 > 12:
+			if tor1 == 13:
+				tor1 = 1
+			elif tor1 == 14:
+				tor1 = 2
+			elif tor1 == 15:
+				tor1 = 3
+			elif tor1 == 16:
+				tor1 = 4
+			elif tor1 == 17:
+				tor1 = 5
+			elif tor1 == 18:
+				tor1 = 6
+			elif tor1 == 19:
+				tor1 = 7
+			elif tor1 == 20:
+				tor1 = 8
+			elif tor1 == 21:
+				tor1 = 9
+			elif tor1 == 22:
+				tor1 = 10
+			elif tor1 == 23:
+				tor1 = 11
+			elif tor1 == 24:
+				tor1 = 12
+		elif tor1 < 13:
+			tor1 = tor1
+		tor2 = (ct.strftime('%M'))
+		tor = f'{tor1}:{tor2}'
 		pa = (ct.strftime('%p'))
 		if pa == 'AM':
 			po = 'صَ'
@@ -90,8 +119,8 @@ if '"authenticated":true' in log.text:
 عيناك عليَّ ولا تراني - {tor} {po} -'''
 		data2 = {
 	'first_name': '',
-	'email': 'aa846513188@gmail.com',
-	'username': 'nzosiebw',
+	'email': 'aa846j13188@gmail.com',
+	'username': 'xtrrryuvr',
 	'phone_number': '',
 	'biography': bio,
 	'external_url': '',
