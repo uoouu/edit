@@ -1,9 +1,12 @@
-import requests,time
+import requests,time,pytz
 from datetime import datetime
 
+IST = pytz.timezone('Asia/Baghdad')
+ct = datetime.now(IST)
+
 timee = int(datetime.now().timestamp())
-tor = (datetime.today().strftime("%H:%M"))
-pa = (datetime.today().strftime("%p"))
+tor = (ct.strftime('%H:%M'))
+pa = (ct.strftime('%p'))
 if pa == 'AM':
 	po = 'صَ'
 elif pa == 'PM':
