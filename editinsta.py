@@ -1,8 +1,7 @@
 import requests,time,pytz
 from datetime import datetime
 
-IST = pytz.timezone('Asia/Baghdad')
-ct = datetime.now(IST)
+
 timee = int(datetime.now().timestamp())
 
 url = 'https://www.instagram.com/accounts/login/ajax/'
@@ -79,6 +78,8 @@ if '"authenticated":true' in log.text:
 	'x-instagram-ajax': '1006149188' }
   
 	while True:
+		IST = pytz.timezone('Asia/Baghdad')
+		ct = datetime.now(IST)
 		tor = (ct.strftime('%H:%M'))
 		pa = (ct.strftime('%p'))
 		if pa == 'AM':
