@@ -3,14 +3,8 @@ from datetime import datetime
 
 IST = pytz.timezone('Asia/Baghdad')
 ct = datetime.now(IST)
-
 timee = int(datetime.now().timestamp())
-tor = (ct.strftime('%H:%M'))
-pa = (ct.strftime('%p'))
-if pa == 'AM':
-	po = 'صَ'
-elif pa == 'PM':
-	po = 'مَ'
+
 url = 'https://www.instagram.com/accounts/login/ajax/'
 
 user = 'natksujetz'
@@ -85,6 +79,12 @@ if '"authenticated":true' in log.text:
 	'x-instagram-ajax': '1006149188' }
   
 	while True:
+		tor = (ct.strftime('%H:%M'))
+		pa = (ct.strftime('%p'))
+		if pa == 'AM':
+			po = 'صَ'
+		elif pa == 'PM':
+			po = 'مَ'
 		bio = f'''‍ ‍ ‍ ‍
 عيناك عليَّ ولا تراني - {tor} {po} -'''
 		data2 = {
